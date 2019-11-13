@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>pikachu</title>
+  </head>
+  <body>
+    <style id="css"></style>
+    <div id="showCSS"></div>
+    <div id="buttons">
+      <button id="pause">暂停</button>
+      <button id="play">播放</button>
+      <button id="slow">慢速</button>
+      <button id="normal">中速</button>
+      <button id="fast">快速</button>
+    </div>
+    <style>
+      #buttons {
+        position: fixed;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        right: 0;
+        top: 0;
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+      #buttons > button {
+        margin-bottom: 10px;
+      }
+      #html {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 50vh;
+        width: 100%;
+      }
+      #css {
+        display: none;
+      }
+      #showCSS {
+        position: fixed;
+        height: 50vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+      }
+      #showCSS::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <div id="html">
+      <div class="skin">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="nose"></div>
+        <div class="cheek left"></div>
+        <div class="cheek right"></div>
+        <div class="mouth">
+          <div class="mouth1">
+            <div class="lip left"></div>
+            <div class="lip right"></div>
+          </div>
+          <div class="mouth2">
+            <div class="out">
+              <div class="in"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="test.js"></script>
+  </body>
+</html>
